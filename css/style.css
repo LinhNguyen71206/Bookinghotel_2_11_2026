@@ -1,0 +1,48 @@
+/* css/style.css - Giao diện tối giản, ưu tiên dễ đọc và dễ kiểm thử */
+body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; color: #222; }
+header { background: #1f4e79; color: #fff; padding: 10px 20px; }
+header h1 { margin: 0; font-size: 20px; }
+header nav a { color: #fff; margin-right: 15px; }
+main { max-width: 960px; margin: 20px auto; padding: 0 20px; }
+footer { text-align: center; color: #777; font-size: 12px; padding: 20px; }
+
+.form-row { margin-bottom: 10px; }
+.form-row label { display: inline-block; width: 190px; vertical-align: top; padding-top: 4px; }
+.form-row input[type=text], .form-row select, .form-row textarea { width: 260px; padding: 4px; }
+.hint { color: #777; font-size: 12px; }
+
+button, .btn { padding: 6px 16px; cursor: pointer; }
+.btn { display: inline-block; background: #e8e8e8; border: 1px solid #999; color: #000; text-decoration: none; font-size: 13px; }
+
+.error { color: #c00; font-size: 13px; margin-left: 8px; }
+.error-box { background: #fdecea; border: 1px solid #c00; color: #c00; padding: 8px 12px; margin: 10px 0; }
+.success-box { background: #e8f5e9; border: 1px solid #2e7d32; color: #2e7d32; padding: 8px 12px; margin: 10px 0; }
+.info-box { background: #fff8e1; border: 1px solid #f9a825; padding: 8px 12px; margin: 10px 0; }
+
+table { border-collapse: collapse; width: 100%; background: #fff; margin-top: 10px; }
+th, td { border: 1px solid #bbb; padding: 6px 8px; text-align: left; font-size: 14px; }
+th { background: #e3ebf3; }
+
+.room-image { height: 120px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 14px; margin-bottom: 10px; }
+.card { background: #fff; border: 1px solid #bbb; padding: 12px 16px; margin-bottom: 14px; }
+.card h3 { margin: 0 0 8px; font-size: 16px; }
+table.info th { width: 200px; }
+/* ===== Bổ sung: header chung + khu vực quản trị ===== */
+.site-header .container { display: flex; align-items: center; flex-wrap: wrap; gap: 20px; }
+.brand { color: #fff; font-size: 20px; font-weight: bold; text-decoration: none; }
+.admin-nav { display: flex; align-items: center; gap: 15px; margin-left: auto; }
+.admin-nav a { margin-right: 0; }
+.admin-nav button { padding: 3px 10px; }
+body.admin main { max-width: 1200px; }
+.inline-form { display: inline; margin: 0; }
+.actions { white-space: nowrap; }
+.actions .btn, .actions button, .actions select { margin: 2px; }
+.form-row input[type=password] { width: 260px; padding: 4px; }
+.form-row textarea { width: 360px; }
+.filter-form .form-row { display: inline-block; margin-right: 12px; vertical-align: top; }
+.filter-form label { display: block; width: auto; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 12px; background: #ddd; }
+.badge-active, .badge-confirmed { background: #c8e6c9; color: #1b5e20; }
+.badge-maintenance, .badge-pending_payment { background: #fff3cd; color: #8a6d00; }
+.badge-inactive, .badge-cancelled, .badge-expired { background: #f8d7da; color: #842029; }
+.badge-completed { background: #cfe2ff; color: #084298; }
